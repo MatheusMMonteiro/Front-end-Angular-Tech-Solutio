@@ -1,0 +1,23 @@
+<section class="d-flex justify-content-center">
+    <button [routerLink]="['/cadastrar-produto']" class="btn btn-success mt-4">Cadastrar Produto</button>
+</section>
+<div class="row d-flex justify-content-center my-5">
+    <div class="col-md-4">
+        <div class="form-group">
+            <input [(ngModel)]='nomeProduto' type="text" class="form-control" id="title" placeholder="Search by title" (keyup)="findByNomeProduto()" >
+        </div>
+    </div>
+</div>
+<div class="d-flex justify-content-center mb-2" *ngFor="let item of listaProdutos">
+    <article class="card w-25 ">
+        <div class="card-body">            
+                <h5 class="card-title">{{item.nome}}</h5>                   
+        <p class="card-text">{{item.fornecedor}}</p>
+          <p class="w-75 card-text">{{item.valor.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}}</p>
+          <p class="text-end">{{item.data | date: "dd/MM/yyyy"}}</p> 
+          <div class="d-flex justify-content-end">
+          </div>
+         
+        </div>                  
+    </article>   
+</div>
