@@ -1,0 +1,27 @@
+<div class="container-fluid p-2 lightBg">
+    <div class="row d-flex justify-content-center">
+  
+      <div class="col-md-10 d-flex flex-column align-items-center">
+  
+        <h2 class="headerStyle p-4"><strong>Atualizar Produto</strong></h2>
+  
+        <div class="form-group col-md-3">
+            <label for="nome">Nome do Produto</label>
+            <input [(ngModel)]="produto.nome"  type="text" id="nome" placeholder="Digite o nome do produto"
+            class="form-control mb-2">
+            <label for="fornecedor">Fornecedor</label>
+            <input [(ngModel)]="produto.fornecedor" type="text" id="fornecedor" placeholder="Digite o nome do Fornecedor"
+            class="form-control mb-2" rows="3" cols="33">
+            <label for="valor">Valor</label>
+            <input [(ngModel)]="produto.valor" type="number" id="valor" class="form-control mb-2">         
+  
+        </div>
+      <div class="d-flex my-4 justify-content-evenly w-50"> 
+        <button class="btn btn-danger" routerLink='/cadastrar-produto'>Cancelar</button>
+        <button class="btn btn-success" (click)="editar()" >Alterar Produto</button>
+      </div>
+              
+      </div>
+  
+    </div>
+</div>
