@@ -15,42 +15,12 @@
           <label for="valor">Valor</label>
           <input [(ngModel)]="produto.valor" type="number" id="valor" class="form-control mb-2">         
 
+      </div> 
+      <div class="d-flex justify-content-evenly mt-4 w-50">
+        <button class="btn btn-danger" routerLink='/inicio'>Cancelar</button>
+        <button class="btn btn-success " (click)="cadastrar()" >Cadastrar Produto</button>
       </div>
-        <button class="btn btn-success mt-4" (click)="cadastrar()" >Cadastrar Produto</button>
-      </div>
-    </div>
-</div>
-
-<div class="container-fluid lightBg">
-    <div class="container pt-5 ">
-      <div class="row d-flex justify-content-center pb-5">
-        <div class="col-md-12">
-          <table class="table table-hover inputStyle">
-            <thead>
-              <tr>
-                <th scope="col" class="">Produto</th>
-                <th scope="col" class="r">Fornecedor</th>
-                <th scope="col" class="r">Criado por</th>
-
-                <th scope="col" class="text-center">Funções</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr *ngFor="let item of listaProdutos">
-                <th scope="row">{{item.nome}}</th>
-                <td>{{item.fornecedor}}</td>
-                <td>{{item.usuario.nome}}</td>
-                <td class="d-flex justify-content-center">
-                  <button class="btn btn-success  m-2 p-1" [routerLink]="['/editar-produto',item.id]">Edit</button>
-                  <button class="btn btn-danger m-2 p-1" [routerLink]="['/deletar-produto', item.id]">Delete</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="d-flex justify-content-center mb-4">
-          <button class="btn btn-danger m-2" [routerLink]="['/inicio']">Cancelar</button>
-        </div>
+      
       </div>
     </div>
 </div>

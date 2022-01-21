@@ -35,7 +35,7 @@ export class DeletarProdutoComponent implements OnInit {
   delete(){
     this.produtoService.deleteProduto(this.produto.id).subscribe(()=>{
       alert('Produto deletado com sucesso')
-      this.rota.navigate(['/cadastrar-produto'])
+      this.rota.navigate(['/inicio'])
     })
   }
 }

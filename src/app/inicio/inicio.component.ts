@@ -34,13 +34,20 @@ export class InicioComponent implements OnInit {
     })
   }
   findByNomeProduto(){
-    if (this.nomeProduto == ''){
-      this.getAllProdutos()
-    }else(
+    if (this.nomeProduto == ''){  
+      this.btnClear()
+    }else(            
+      document.getElementById('button-addon1')?.classList.remove('visually-hidden'),
       this.produtoService.getNomeProdutos(this.nomeProduto).subscribe((resp: Produtos[]) =>{
         this.listaProdutos = resp
       })
     )
+  }
+  btnClear(){
+    document.getElementById('button-addon1')?.classList.toggle('visually-hidden')
+    this.getAllProdutos()
+    
+
   }
 
 }
