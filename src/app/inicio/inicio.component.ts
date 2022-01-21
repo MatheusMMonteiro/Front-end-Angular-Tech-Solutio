@@ -12,6 +12,8 @@ import { ProdutosService } from '../service/produtos.service';
 })
 export class InicioComponent implements OnInit {
 
+  key = 'data'
+  reverse = true
   nomeProduto: string
   listaProdutos: Produtos[]
   produto: Produtos = new Produtos()

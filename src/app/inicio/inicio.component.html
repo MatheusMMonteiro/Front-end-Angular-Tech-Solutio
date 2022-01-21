@@ -1,7 +1,4 @@
-<section class="d-flex justify-content-center">
-    <button [routerLink]="['/cadastrar-produto']" class="btn btn-success mt-4">Cadastrar Produto</button>
-</section>
-<h1 class="text-center mt-4">Tech Solution</h1>
+<h1 class="text-center mt-4">Tech Solutio</h1>
 <div class="row d-flex justify-content-center my-5 mx-0">
     <div class="col-md-3">
         <form class="form-group input-group m-0 p-0">            
@@ -13,7 +10,7 @@
         </form>
     </div>
 </div>
-<div class="row d-flex justify-content-center m-0 mb-2" *ngFor="let item of listaProdutos">
+<div class="row d-flex justify-content-center m-0 mb-2" *ngFor="let item of listaProdutos | orderBy: key : reverse">
     <article class="card col-md-3">  
         <div class="d-flex justify-content-between align-items-center pt-2">
         <p class="text-start m-0">{{item.usuario.nome.split(" ",1)}} </p>      

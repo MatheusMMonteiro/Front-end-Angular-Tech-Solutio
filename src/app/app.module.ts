@@ -12,6 +12,7 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { CadastrarProdutoComponent } from './produto/cadastrar-produto/cadastrar-produto.component';
 import { EditarProdutoComponent } from './produto/editar-produto/editar-produto.component';
 import { DeletarProdutoComponent } from './produto/deletar-produto/deletar-produto.component';
+import { OrderModule } from 'ngx-order-pipe';
 
 @NgModule({
   declarations: [
@@ -28,9 +29,8 @@ import { DeletarProdutoComponent } from './produto/deletar-produto/deletar-produ
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
-    
-    
+    FormsModule,
+    OrderModule   
   ],
   providers: [],
   bootstrap: [AppComponent]
