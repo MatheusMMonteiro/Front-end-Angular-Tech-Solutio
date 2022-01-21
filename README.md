@@ -1,27 +1,66 @@
-# TechSolutio
+<div align="center">   
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.11.
+  <h1>Consumo da API Spring Boot com AngularJS  </h1>
 
-## Development server
+Teste Técnico para Tech Solutio
+</div>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## < Index >
+<ul>
+  <li>Funções</li>
+  <li>Instalação</li>
+  <li>Tecnologias Utilizadas</li>
+  <li>LICENSE</li>
+    
+</ul>
 
-## Code scaffolding
+## 🚀Funções 
+- Cadastro de Usuários
+- Autenticação com o servidor
+- CRUD de Produtos
+- Listagem de Produtos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# 📕Instalação 
+### 1. Clone this repository
+```
+git clone https://github.com/MatheusMMonteiro/Front-end-Angular-Tech-Solutio
+```
 
-## Build
+### 2. Open the project on VScode or other IDE
 
+
+### 3. Install the dependencies
+Open terminal and execute
+```
+ npm i
+ ```
+And Wait for the dependencies to install
+
+### 4. Build
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+ng build
+```
 
-## Running unit tests
+# 🎮Iniciando o projeto
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Still on terminal run 
+ ``` 
+ ng serve
+ ```
+2. Navigate to ```http://localhost:4200/```
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🌐Tecnologias Utilizadas
 
-## Further help
+<div style="display: inline_block">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" width="80px"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="80px"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg" width="80px"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" width="80px" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="80px" />
+</div><br>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## License
+
+[MIT License](./LICENSE)
